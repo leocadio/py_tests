@@ -27,9 +27,11 @@ for filename in os.listdir(path):
             acars_subset.append(newline)
         elif count == 10:
             acars_subset.append(newline)
-        elif newline.split(sep=' '):
+        elif re.search('PAYLOAD',newline):
             acars_subset.append(newline)
-        elif newline.split(sep=' '):
+        elif re.search('MZFW',newline):
+            acars_subset.append(newline)
+        elif re.search('UNDLD',newline):
             acars_subset.append(newline)
             acars_set.append(acars_subset)
     file.close()
