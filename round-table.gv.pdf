@@ -1,0 +1,13 @@
+// Проезд ПВП МСК-> РнД
+digraph {
+	A [label="ПВП1"]
+	B [label="ПВП2"]
+	C [label="ПВП3"]
+	D [label="ПВП4"]
+		A -> B
+		B -> C
+		C -> D
+		A -> C [label="135 КМ" color=Red]
+		A -> D [color=Red]
+	color=Green
+}
